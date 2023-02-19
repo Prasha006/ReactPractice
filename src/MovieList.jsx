@@ -83,7 +83,7 @@ export function MovieList() {
     <div>
       <div className="add-movie-form">
         <TextField id="standard-basic" label="Name" variant="standard" onChange={(event) => setName(event.target.value)} value={name} />
-        <TextField id="standard-basic" label="Poster" variant="standard" onChange={(event) => setPoster(event.target.value)} value={poster} />
+        <TextField id="standard-basic" label="PosterLink" variant="standard" onChange={(event) => setPoster(event.target.value)} value={poster} />
         <TextField id="standard-basic" label="Rating" variant="standard" onChange={(event) => setRating(event.target.value)} value={rating} />
         <TextField id="standard-basic" label="Summary" variant="standard" onChange={(event) => setSummary(event.target.value)} value={summary} />
         <Button variant="contained" onClick={() => {

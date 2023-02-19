@@ -1,5 +1,6 @@
 import './App.css'
 import { MovieList } from './MovieList';
+import { Routes, Route, Link } from "react-router-dom";
 
 function App() {
   const data = [{
@@ -16,14 +17,26 @@ function App() {
   }]
   return (
     <div className="App">
-      {/* {data.map(({name,img})=>{
-        return <Welcome name={name} img={img}/>
-      })} */}
-      <MovieList />
-      {/* <AddColor /> */}
+      <ul>
+        <li> <Link to="/">Home</Link> </li>
+        <li> <Link to='/movies'>Movies</Link> </li>
+        <li></li>
+      </ul>
 
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/movies" element={<MovieList />} />
+      </Routes>
     </div>
   );
+}
+
+function Home() {
+  return (
+    <div>
+      <h1>Welcome to MovieApp</h1>
+    </div>
+  )
 }
 
 export default App

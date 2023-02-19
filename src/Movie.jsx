@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Counter } from './Counter';
 
 export function Movie({ movie }) {
   // const movie = {
@@ -35,6 +36,7 @@ export function Movie({ movie }) {
 
       {/* Conditional Rendering (It will remove from DOM*/}
       {show ? <p className="movie-summary">{movie.summary}</p> : null}
+      <Counter />
     </div>
   );
 }
