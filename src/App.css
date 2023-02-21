@@ -70,3 +70,8 @@
   margin: 0 auto;
   margin-bottom: 10px;
 }
+
+.not-found-container{
+  display: flex;
+  justify-content: center;
+}
